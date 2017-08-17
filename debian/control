@@ -1,0 +1,21 @@
+Source: libdisplaycore-driver-ks0108
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-driver-ks0108
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Drivers
+Depends: libdisplaycore-core
+Provides: KS0108.h
+Description: KS0108 GLCD Driver for DisplayCore
+ The KS0108 GLCD is a 64x64 1-bit GLCD system.  It is most often combined
+ into a multi-chip display to create 128x64, 192x64 and 256x64 displays.
+ Multiple forms of the class are provided for different chip arrangements.
+
+
+
