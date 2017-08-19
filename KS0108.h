@@ -22,9 +22,9 @@ class KS0108 : public DisplayCore {
         const uint8_t GLCD_STAT_RESET    = 0b00010000;
 
         uint8_t _buffer[8 * 64];
+        int _buffered;
         uint32_t _reg;
         uint32_t _data;
-        int _buffered;
 
         void setPage(uint8_t page);
         void setY(uint8_t y);
@@ -45,10 +45,10 @@ class KS0108 : public DisplayCore {
         void startBuffer();
         void endBuffer();
 
-        void setRotation(int r) {}
+        void setRotation(int __attribute__((unused)) r) {}
         void displayOn() {}
         void displayOff() {}
-        void invertDisplay(boolean b) {}
+        void invertDisplay(boolean __attribute__((unused)) b) {}
 
         int getWidth();
         int getHeight();
@@ -71,10 +71,10 @@ class KS0108_2 : public DisplayCore {
         void startBuffer();
         void endBuffer();
 
-        void setRotation(int r) {}
+        void setRotation(int __attribute__((unused)) r) {}
         void displayOn() {}
         void displayOff() {}
-        void invertDisplay(boolean b) {}
+        void invertDisplay(boolean __attribute__((unused)) b) {}
 
         int getWidth();
         int getHeight();
@@ -160,10 +160,10 @@ class KS0108_BB2 : public DisplayCore {
         void startBuffer();
         void endBuffer();
 
-        void setRotation(uint8_t r) {}
+        void setRotation(uint8_t __attribute__((unused)) r) {}
         void displayOn() {}
         void displayOff() {}
-        void invertDisplay(boolean b) {}
+        void invertDisplay(boolean __attribute__((unused)) b) {}
 
         int getWidth();
         int getHeight();
