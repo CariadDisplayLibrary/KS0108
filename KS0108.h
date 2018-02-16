@@ -48,7 +48,7 @@ class KS0108 : public DisplayCore {
         void setRotation(int __attribute__((unused)) r) {}
         void displayOn() {}
         void displayOff() {}
-        void invertDisplay(boolean __attribute__((unused)) b) {}
+        void invertDisplay(bool __attribute__((unused)) b) {}
 
         int getWidth();
         int getHeight();
@@ -74,7 +74,7 @@ class KS0108_2 : public DisplayCore {
         void setRotation(int __attribute__((unused)) r) {}
         void displayOn() {}
         void displayOff() {}
-        void invertDisplay(boolean __attribute__((unused)) b) {}
+        void invertDisplay(bool __attribute__((unused)) b) {}
 
         int getWidth();
         int getHeight();
@@ -163,7 +163,7 @@ class KS0108_BB2 : public DisplayCore {
         void setRotation(uint8_t __attribute__((unused)) r) {}
         void displayOn() {}
         void displayOff() {}
-        void invertDisplay(boolean __attribute__((unused)) b) {}
+        void invertDisplay(bool __attribute__((unused)) b) {}
 
         int getWidth();
         int getHeight();
