@@ -1,14 +1,14 @@
 #ifndef _KS0108H_
 #define _KS0108H_
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 
 
 #define C2B(X, Y) (((Y) << 6) + (X))
 
 // A single KS0108 chip on the PMP.
 
-class KS0108 : public DisplayCore {
+class KS0108 : public Cariad {
 
     private:
         const uint8_t GLCD_CMD_OFF       = 0b00111110;
@@ -54,7 +54,7 @@ class KS0108 : public DisplayCore {
         int getHeight();
 };
 
-class KS0108_2 : public DisplayCore {
+class KS0108_2 : public Cariad {
 
     private:
         KS0108 _lcd1;
@@ -137,7 +137,7 @@ class KS0108_BB : public KS0108 {
         void initializeDevice();
 };
 
-class KS0108_BB2 : public DisplayCore {
+class KS0108_BB2 : public Cariad {
 
     private:
         KS0108_BB _lcd1;

@@ -1,16 +1,17 @@
-Source: libdisplaycore-driver-ks0108
+Source: libcariad-driver-ks0108
 Section: main
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: libdisplaycore-driver-ks0108
+Package: libcariad-driver-ks0108
+Replaces: libdisplaycore-driver-ks0108
 Architecture: all
-XBSC-Group: DisplayCore
+XBSC-Group: Cariad
 XBSC-Subgroup: Drivers
 XBSC-Subsubgroup: LCD
-Depends: libdisplaycore-core
+Depends: libcariad-core
 Provides: KS0108.h
 Description: KS0108 GLCD
  The KS0108 GLCD is a 64x64 1-bit GLCD system.  It is most often combined
